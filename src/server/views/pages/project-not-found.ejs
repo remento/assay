@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <title>Assay: Make your site better</title>
+    <meta name="description" content="Assay: Tools for experimenting with, and troubleshooting, a website's UI code">
+</head>
+<body>
+    <% include ../partials/navBar %>
+    <div class="container main">
+        <h1 class="mt-2 mb-2">
+           project-not-found
+        </h1>
+        <p class="lead">
+            The requested project was not found on
+            this instance. Perhaps it needs to be
+            loaded, or maybe, <em>it just does not
+            exist all</em>.
+        </p>
+        <button type="submit" class="btn btn-secondary btn-lg float-xs-right mr-3" onclick="history.back();">
+            go back
+        </button>
+    </div>
+    <% include ../partials/footerDisplay %>
+    <% include ../partials/foot %>
+</body>

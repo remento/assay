@@ -1,0 +1,17 @@
+
+<script>
+    (function (w) {
+        'use strict';
+        w.assay = <%-JSON.stringify(config.clientConfig||{})%>;
+        w.assay.projectCode = <%-JSON.stringify(project.code||null)%>;
+    }(window));
+</script>
+<script src="/libs/jquery/jquery.min.js"></script>
+<script src="/libs/tether/js/tether.min.js"></script>
+<script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="/public/core.bundle.js" type="text/javascript"></script>
+<script>
+    $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>

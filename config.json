@@ -1,0 +1,22 @@
+{
+
+    "instanceName":"things",
+    "instanceNumberWords": 1,
+    "projectNumberWords": 2,
+    "projectsUrlPathSegment": "projects",
+    "project404": "/projects/project-not-found",
+    "port": 3000,
+    "firebaseCredentialPath":"/Users/xzgb30/dev/assay-e12b7-firebase-adminsdk-jdohz-326968e246.json",
+    "firebaseDatabaseURL": "https://assay-e12b7.firebaseio.com",
+    "clientConfig":{
+        "trafficDisplayRecordLimit": 3,
+        "firebaseConfig": {
+            "apiKey": "AIzaSyBfLJ8UCWmJFvHr4DgRi0ExMytm-PpzthQ",
+            "authDomain": "assay-e12b7.firebaseapp.com",
+            "databaseURL": "https://assay-e12b7.firebaseio.com",
+            "storageBucket": "assay-e12b7.appspot.com",
+            "messagingSenderId": "135573122367"
+        }
+    }
+
+}

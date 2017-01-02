@@ -1,0 +1,56 @@
+{
+    "proxies": {
+        "serverA": {
+            "domain": "remento.com"
+        }
+    },
+    "projectList": {
+        "hat-trick": {
+            "code": "hat-trick",
+            "domain": "www.danmoore.org/",
+            "proxyInstance": "serverA"
+        },
+        "stink-bomb": {},
+        ...
+    },
+    "projectRequests": {
+        "hat-trick": {
+            "requestCount": 0, // each time proxy processes a hit
+            "requestCountUnique": 0, // each time an item is added to requests or child
+            "firstRequestDate": 0, // epochDate
+            "lastRequestDate": 0, // epochDate
+            "requests:": {
+                // push - time key- server does not need to track unless optioned
+                "[generatedKey]":{
+                    "optionKey": "[hash(method|url)]",
+                    "url": "/index.html?bubba=1&d=2",
+                    "method": "GET|POST|DELETE|...",
+                    "response":{...},
+                    "proxyAction":""
+                }
+
+//                // hash ? --
+//                "[hash(method|url)]": {
+//                    "url": "/index.html?bubba=1&d=2",
+//                    "method": "GET|POST|DELETE|...",
+//                }
+                ...
+            }
+        },
+        ...
+    },
+    "projectRequestOptions": {
+        "hat-trick": {
+            "[hash(method|url)]": {
+                "requestAction": "proxy|302|cache|replaceFromUrl|replaceFromEditor",
+
+
+
+                "optionA": true,
+                "optionB": false,
+                "optionC": {}
+            },
+            ...
+        }
+    }
+}

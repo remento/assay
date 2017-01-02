@@ -1,0 +1,29 @@
+
+{
+    //@see https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+    // JSHint Default Configuration File (as on JSHint website)
+    // See http://jshint.com/docs/ for more details
+
+    "maxerr"        : 50,       // {int} Maximum error before stopping
+
+    // Enforcing
+    "globalstrict"  : true,     // true: Allow global "use strict" (also enables 'strict')
+    "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
+
+    // Environments
+    "node"          : true,    // Node.js
+    "browser"       : true,
+
+    // Relaxing
+    "esversion"     : 6,         // {int} Specify the ECMAScript version to which the code must adhere.
+
+    // Custom Globals
+    "globals"       : {
+        "__dirname": true
+        // additional predefined global variables
+        //"require": true, "exports":true,
+
+        // js hint does not register all noded globals... https://github.com/jshint/jshint/issues/292
+        // "console": true,"setTimeout":true
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <title>Assay: My Project</title>
+    <meta name="description" content="Assay: Tools for experimenting with, and troubleshooting, a website's UI code">
+</head>
+<body>
+
+    <% include ../partials/navBar %>
+
+    <div class="container main">
+        <p></p>
+        <div id="accordion" role="tablist" aria-multiselectable="false">
+            <div class="card">
+                <div class="card-header alert alert-success" role="tab" id="headingOne">
+                    <div role="alert" >
+                        <a data-toggle="collapse" data-parent="#accordion" href="#projectDetails" aria-expanded="false" aria-controls="projectDetails">
+                            <strong>Your Project:</strong> <%= project.code %>
+                        </a>
+                    </div>
+                </div>
+                <div id="projectDetails" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="card-block">
+                        Source: <%= project.client.source.host %>
+                        <br> Proxy status: <%= project.client.status %> <%= project.client.statusErrorDetail %>
+                        <br> Proxy Time: <%= new Date() %>
+                    </div>
+                </div>
+                <p class="lead ml-2">
+                    <%if (project.client.status === 'running' && project.client.relay.port ) { %>
+                        <a href="http://localhost:<%= project.client.relay.port %>/" target="_blank">
+                            Access via proxy: <%= project.client.relay.port %>
+                        </a>
+                    <%} else {%>
+                        <em>Proxy server is not available</em>
+                    <%} %>
+                </p>
+            </div>
+        </div>
+        <!-- react app placeholder -->
+        <div id="app"></div>
+    </div>
+    <% include ../partials/footerDisplay %>
+    <% include ../partials/foot %>
+    <script src="/public/project-home.bundle.js" type="text/javascript"></script>
+</body>
