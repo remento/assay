@@ -28,7 +28,7 @@ middle."
 
 # Motivation
 I created this project over the December 2016 holiday as an excuse to
-play around with some technology that interests me. Some of the choices I made,
+play around with technology that interests me. Some of the choices I made,
 like using Firebase, were made because I just wanted to play with that service
 or framework.
 
