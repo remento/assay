@@ -27,7 +27,7 @@ middle."
   1. Cookie management for session sharing
 
 # Motivation
-I created this project over the December 2016 holiday of 2016 as an excuse to
+I created this project over the December 2016 holiday as an excuse to
 play around with some technology that interests me. Some of the choices I made,
 like using Firebase, were made because I just wanted to play with that service
 or framework.
