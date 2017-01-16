@@ -1,15 +1,22 @@
 {
-
+    "_comment": "Create a Firebase account and downlownd the private credential file. See readme for details.",
     "instanceName":"things",
     "instanceNumberWords": 1,
     "projectNumberWords": 2,
     "projectsUrlPathSegment": "projects",
     "project404": "/projects/project-not-found",
     "port": 3000,
-    "firebaseCredentialPath":"/Users/xzgb30/dev/assay-e12b7-firebase-adminsdk-jdohz-326968e246.json",
+
+    "_comment_firebaseDatabaseURL": "Update with own URL from Firebase account",
     "firebaseDatabaseURL": "https://assay-e12b7.firebaseio.com",
+
+    "_comment_firebaseCredentialPath": "Update with path to private credential file",
+    "firebaseCredentialPath":"../firebase-adminsdk.json",
+
     "clientConfig":{
-        "trafficDisplayRecordLimit": 3,
+        "trafficDisplayRecordLimit": 500,
+
+        "_comment_firebaseConfig": "Update with your own information from Firebase client init JS code snip",
         "firebaseConfig": {
             "apiKey": "AIzaSyBfLJ8UCWmJFvHr4DgRi0ExMytm-PpzthQ",
             "authDomain": "assay-e12b7.firebaseapp.com",
